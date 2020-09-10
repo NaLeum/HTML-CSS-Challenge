@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #E7E9EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .container {
+    width: 380px;
+    height: 825px;
+    background-color: #EFF1F6;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .header {
+    height: 395px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .5) 10%,
+            rgba(239, 241, 245, 0.25) 25%,
+            rgba(239, 241, 245, 0.5) 50%,
+            rgba(239, 241, 245, 0.75) 75%,
+            rgba(239, 241, 245, 0.9) 80%,
+            rgba(239, 241, 245, 1) 100%),
+        url("https://evasionasantorin.fr/wp-content/uploads/2020/04/oia-la-nuit-1024x1024.jpg");
+    background-size: cover;
+
+}
+
+.container .inner,
+.main .main__header,
+.subtitle .inner {
+    width: 320px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header .status-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.network-icon {
+    width: 15px;
+    height: 13px;
+}
+
+.inner .inner__header {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.inner .pictures {
+    margin-top: 180px;
+}
+
+.pictures__list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pictures__list-item {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.pictures__list-item:nth-child(1) {
+    background-image: url("https://m.citytour.com/upload/8008831/Thumbnail/%EA%B7%B8%EB%A6%AC%EC%8A%A4Santorini-Oiavillage-1_AuthorMstyslavChernov_640.jpg");
+}
+
+.pictures__list-item:nth-child(2) {
+    background-image: url("https://media.istockphoto.com/photos/white-church-in-oia-town-on-santorini-island-in-greece-picture-id475124388?b=1&k=6&m=475124388&s=170667a&w=0&h=Kf6Gjwey0PwMRbwo6pdmqSFcZcNz9JcLHzvP_lXs9Pw=");
+}
+
+.pictures__list-item:nth-child(3) {
+    background-image: url("https://ko.skyticket.com/static/img/international-flights/GRC.jpg");
+}
+
+.pictures__list-item:nth-child(4) {
+    background-color: #3F67FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.pictures .pictures__tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.pictures__tags .pictures__tags-tag {
+    padding: 0 15px;
+    margin-right: 15px;
+    font-weight: 500;
+    height: 30px;
+    background-color: #DEE4FA;
+    color: #2D5BFC;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.main__header-titlegroup .titlegroup__columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.titlegroup__columns .main__header-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.titlegroup__columns .heart {
+    color: #FE2A39;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.titlegroup__columns .marker {
+    color: #2957FC;
+    font-size: 14px;
+    margin-right: 3px;
+}
+
+.titlegroup__columns .main__header-place {
+    font-size: 20px;
+    opacity: .5;
+    font-weight: 300;
+}
+
+.main__stars i {
+    color: #FFBC23;
+}
+
+.main__stars .stars__rating {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.titlegroup__columns .main__long {
+    opacity: .4;
+    font-family: nomal;
+    font-size: 18px;
+}
+
+.subtitle {
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+}
+
+.subtitle .subtitle__overview {
+    font-size: 12px;
+    opacity: .5;
+}
+
+.subtitle .subtitle__p {
+    line-height: 1.5;
+    margin: 10px 0;
+    font-size: 18px;
+    opacity: .6;
+    font-weight: 400;
+}
+
+.subtitle .subtitle__read {
+    display: block;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #1343FC;
+}
+
+.footer {
+    background-color: white;
+    width: 385px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 365px;
+    font-size: 20px;
+    color: #9AA9C2;
+    position: relative;
+}
+
+.nav i,
+.nav .blank {
+    width: 50px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav i:nth-child(2) {
+    color: #3561FC;
+    border-top: 3px solid #3561FC;
+}
+
+.nav .icon-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -40px;
+    width: 85px;
+    height: 40px;
+    border: 10px solid#E0E4F0;
+    border-radius: 40px 40px 0px 0px;
+    border-bottom: 0;
+}
+
+.nav .icon-container i {
+    width: 60px;
+    height: 60px;
+    background-color: #3F67FC;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    box-shadow: 10px 10px 30px rgba(102, 186, 255, .4),
+        -10px 10px 30px rgba(102, 186, 255, .4);
+}
+
+.footer .footer__underline {
+    width: 125px;
+    height: 3px;
+    background-color: gray;
+    opacity: .2;
+}

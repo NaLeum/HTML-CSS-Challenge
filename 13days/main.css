@@ -1,0 +1,149 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #F8F8F8;
+}
+
+.area__camera,
+.area__dog {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area__camera .camera {
+    width: 350px;
+    height: 250px;
+    background-color: #049D91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.area__camera .camera i {
+    color: #fff;
+    font-size: 130px;
+}
+
+.camera__cover {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    background-color: #0c0f11;
+    top: 0px;
+    left: 0px;
+    transition: top .5s linear, left .5s linear, opacity .5s linear;
+}
+
+.camera:hover .camera__cover {
+    opacity: 1;
+    position: absolute;
+    background-color: #222d35;
+    top: 15px;
+    left: 15px;
+    transition: top .3s linear, left .3s linear, opacity .3s linear;
+}
+
+.g-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.g-subtitle {
+    font-size: 14px;
+    color: #E34769;
+}
+
+.g-btn {
+    display: inline-block;
+    background-color: #E34769;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-btn:hover {
+    background-color: #F5C289;
+    color: black
+}
+
+.cover__subtitle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.area__dog .dog {
+    width: 350px;
+    height: 250px;
+    background-color: #F8A4A1;
+    overflow: hidden;
+}
+
+.dog__icon-cover {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s linear;
+}
+
+.dog:hover .dog__icon-cover {
+    height: 150px;
+    transition: height 0.3s linear;
+}
+
+.dog i {
+    color: #fff;
+    font-size: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dog__slide {
+    width: 100%;
+    height: 100px;
+    background-color: #222d35;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dog__slide .slide__group {
+    margin: 20px 15px;
+}
+
+.dog__title {
+    margin-bottom: 5px;
+}
+
+.cover__btn {
+    margin-top: 55px;
+    margin-right: 15px;
+}

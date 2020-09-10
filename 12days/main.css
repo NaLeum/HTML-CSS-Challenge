@@ -1,0 +1,178 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #2699F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 315px;
+    height: 680px;
+    background-image: url("http://www.animaltogether.com/news/photo/201908/345_769_1716.jpg");
+    background-size: 315px 680px;
+
+}
+
+.container .container__cover {
+    width: 315px;
+    height: 680px;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.status-bar {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.main {
+    margin: 5px 20px;
+}
+
+.main .main__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    opacity: .8;
+}
+
+.main .main__header i {
+    opacity: .6;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main__profile {
+    height: 545px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__profile .main__profile-image {
+    width: 70px;
+    height: 70px;
+    background-image: url("http://www.animaltogether.com/news/photo/201908/345_769_1716.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.main__profile .main__profile-name {
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+    color: #3eb9f1;
+    margin-bottom: 10px;
+}
+
+.main__profile .main__profile-live {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.main__profile .main__profile-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.g-btn {
+    width: 135px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0px 5px 10px rgba(130, 130, 130, .7);
+}
+
+.main__profile-btns .btns__btn-follow {
+    background-color: white;
+
+}
+
+.main__profile-btns .btns__btn-message {
+    background-color: #289AFA;
+    color: white;
+
+}
+
+.main__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__footer .footer__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.footer__column .number {
+    margin-bottom: 3px;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.footer__nav i:nth-child(1) {
+    color: #2699F9;
+}
+
+.footer__underline {
+    width: 115px;
+    height: 2px;
+    background-color: gray;
+    opacity: 0.7;
+}

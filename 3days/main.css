@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 1500px;
+}
+
+header.red{
+    width: 100%;
+    height: 50px;
+    background-color: #FF7979;
+    position: fixed;
+    top:0;
+    z-index: 2;
+}
+.red .box__green{
+    width: 10%;
+    height: 100%;
+    background-color: #BADC58;
+    position: absolute;
+    top:60%;
+    right: 25%;
+
+}
+.boxs{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 50px;
+}
+.boxs .box__blue{
+    width: 70%;
+    height: 1450px;
+    background-color: #7ED6DF;
+}
+.boxs .box__blue .title{
+    padding: 50px;
+    color:white;
+    font-size:4em;
+}
+.boxs .box__yellow{
+    width: 30%;    
+    height: 1440px;    
+    background-color: #FFCC00;
+    border: 5px solid grey;
+}
